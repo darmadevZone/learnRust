@@ -1,4 +1,4 @@
-use std::fmt::format;
+use std::{collections::btree_map::Range, fmt::format, ops::RangeInclusive};
 
 pub mod touple;
 //const B: i32 = 22;
@@ -90,16 +90,78 @@ fn main() {
     let s5: String = format!("{}{}", s1, "golang");
     println!("{}", s5);
      */
-    say_hello();
-    add(33, 33);
+    //    say_hello();
+    //   add(33, 33);
+
+    //ぶろっくについて
+    block()
 }
 
 // function
 //戻り値のない関数は空のタプルになる。
-
+/*
 fn say_hello() {
     println!("say_hello")
 }
 fn add(a: i32, b: i32) -> i32 {
     a + b
+
+}
+ */
+
+fn block() {
+    /*
+      //ブロックの外が空ブロックにないで変数を使うことはできる。その逆はできない。
+      //変数はなんでも宣言できる(シャドーイング)
+      println!("1 block");
+      {
+          println!("2 block");
+      }
+
+    */
+
+    //if式 && || (0 null unknownはfalseみたいなものはない。)
+    //match式
+    /*
+    ex) let x:i32 =0;
+      match x{
+        0 => println!("Zero")
+        1 => ....
+        2 => ....
+        .
+        .
+      }
+      _ => ... elseのようなもの
+
+      //loop式
+      loop{
+        println!(....)
+        if ....{
+            break;
+        }
+      }
+
+
+    */
+    /*
+     //while式
+     let mut cnt: i32 = 0;
+     while cnt <= 10 {
+         cnt += 1;
+     }
+
+     //for式
+     /*
+    for i:i32 in[...配列]{
+     println!(...)
+    }
+
+     */
+     */
+    //let range: Range<i32> = 1..10; //0...9
+    //let range: RangeInclusive<i32> = 1..=10; //0...10
+    let r: RangeInclusive<i32> = 1..=10;
+    for x in r {
+        println!("{}->{}", x, x * x);
+    }
 }
