@@ -2,5 +2,15 @@
     "[rust]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    }
+    },
+    "[json][jsonc]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "unifiedjs.vscode-remark",
+        "editor.formatOnSave": true
+    },
+    //vscode setting edit
+    "breadcrumbs.enabled": true,
 }
