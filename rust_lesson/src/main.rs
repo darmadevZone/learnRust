@@ -160,8 +160,9 @@ fn block() {
      */
     //let range: Range<i32> = 1..10; //0...9
     //let range: RangeInclusive<i32> = 1..=10; //0...10
+    /*
     let r: RangeInclusive<i32> = 1..=10;
     for x in r {
         println!("{}->{}", x, x * x);
-    }
+    } */
 }
